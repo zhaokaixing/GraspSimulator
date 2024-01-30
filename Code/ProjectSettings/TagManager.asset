@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - DP1_end
+  - DP4_end
+  - DP5_end
+  - DP2_end
+  - DP3_end
+  - DP1_begin
+  - DP2_begin
+  - DP3_begin
+  - DP4_begin
+  - DP5_begin
+  - DP2_middle
+  - DP3_middle
+  - DP4_middle
+  - DP5_middle
+  - DP1_hand
+  - DP2_hand
+  - DP3_hand
+  - DP4_hand
+  - DP5_hand
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcessing
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

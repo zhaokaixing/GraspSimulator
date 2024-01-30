@@ -1,0 +1,62 @@
+1.9.0b - Hotfix
+Fixed editor checks when running on batch mode
+Fixed iOS libraries inclusion
+Added batch mode settings (when running on batch mode, you can pass the following settings to change TriLib behaviour: TRILIB_DISABLE_AUTO_IMPORT, TRILIB_USE_ZIP, TRILIB_OUTPUT_MESSAGES, TRILIB_USE_IOS_SIMULATOR, TRILIB_ENABLE_IOS_FILE_SHARING)
+Added "Use IOS file Sharing" and "Use IOS Simulator" to TriLib settings area
+Added "StartOnLogicalDrives" field to "FileOpenDialog" to specify if the dialog will start showing the logical drives
+Fixed "ProgressHandlingSample" script on UWP
+Fixed missing filename error when loading from memory or ZIP files
+Replaced "$$___magic___$$$" on root GameObject names
+
+1.9.0
+Fixed missing animation components assignment
+Fixed aiMaterial_GetShininessStrength and aiMaterial_GetShininess values reading
+Added options to: Disable Automatic Models loading on Editor, Disable Native Plugins checking, Disable Deprecated Versions checking on Project Settings.
+Added button to configure Native Plugins metadata on Project Settings.
+Moved TriLib menu items to Project Settings.
+Removed hard-coded references to TriLib install path on samples, allowing users to run the samples when TriLib is installed on a different folder.
+Deprecated AssetLoaderOptions.ForceAnimationComponents field
+
+1.8.9b
+WebGL native libraries reference fix
+
+1.8.9a
+Replaced WebGL libraries
+
+1.8.9
+STEP reader fixes
+3DS progress handler fix
+FBX reader fixes
+GLTF2 reader fixes
+GLTF reader fixes
+MD4 reader fixes
+MMD reader fixes
+OBJ reader fixes
+DAE reader fixes
+SMD reader fixes
+Removed invalid data checking which was preventing some models from loading
+Removed iOS internal ZLIB dependency (using TriLib own ZLIB)
+Fixed WebGL issues*
+Fixed a bug where older Android devices couldn't accept 32-bits indexed meshes
+Fixed a bug where unnamed embedded textures couldn't be loaded correctly
+Fixed a bug where temporary textures weren't disposed
+Fixed memory leaks
+Fixed material transparency issues
+Fixed FBX base-64 textures reading bug
+Fixed async errors catching
+Fixed bug where textures with empty names would cause errors
+Fixed samples issues
+Fixed misc. issues
+Added Hololens 2 experimental support
+Added UTF-8 texture path support
+Added WebGL template which is used on TriLib demo
+Added WebGL utility class JsHelper which contains methods to read file data from Javascript
+Added AssetLoaderOptions.UseOriginalPositionRotationAndScale to allow maintaining original model coordinates
+Added AssetLoaderOptions.MaterialShadingMode to allow material shading mode selection (Standard, Roughness or Specular)
+Added AssetLoaderOptions.MaterialTransparencyMode to allow material transparency mode selection
+Added AssetLoaderOptions.LoadRawMaterialProperties to allow custom material data loading. Custom properties will be available on AssetLoaderBase.MaterialData Properties field
+Added TIFF images support
+Added AssetLoaderOptions fields: ApplyGlossinessScale, ApplyGlossiness, ApplyNormalScale, ApplyMetallicTexture, ApplyOcclusionTexture, ApplyDisplacementTexture, ApplyNormalTexture, ApplySpecularTexture, ApplyEmissionTexture, ApplyDiffuseTexture, ApplySpecularColor, ApplyEmissionColor, ApplyDiffuseColor, ApplyColorAlpha to allow selectively components loading
+Added AssetLoaderOptions.DontAddMetadataCollection, when enabled, TriLib will add an AssimpMetadataCollection component to every GameObject child, containing a collection of metadata found while loading the model
+Added AssetLoaderOptions.ForceAnimationComponents to enforce Animation/Animator components creation even when there are no animated objects on the model
+*Note: WebGL module isn't working on Unity 2019 yet, we are working on a fix for this issue
